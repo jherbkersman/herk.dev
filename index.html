@@ -155,13 +155,17 @@
       <li>Web Development</li>
       <li>SaaS Solutions</li>
     </ul>
-    <iframe
-        src="https://jackherb-ajw-gpt.hf.space"
-        frameborder="0"
-        width="200"
-        height="450"
-        style="border-radius: 15px; position: fixed; right: 20px; bottom: 20px;"
-    ></iframe>
+    <div id="collapsibleIframe" style="position: fixed; right: 20px; bottom: 20px;">
+        <button id="toggleButton" onclick="toggleIframe()">Toggle iFrame</button>
+        <iframe
+            id="myIframe"
+            src="https://jackherb-ajw-gpt.hf.space"
+            frameborder="0"
+            width="200"
+            height="450"
+            style="display: none; border-radius: 15px;"
+        ></iframe>
+    </div>
     <a href="mailto:admin@herk.dev?subject=Reaching Out About Herk Technical&body=Please contact me, here is my info:" target="_blank">
       <button>Get In Touch</button>
     </a>
@@ -169,6 +173,18 @@
     </div>
   </body>
   <script>
+    function toggleIframe() {
+        var iframe = document.getElementById("myIframe");
+        var button = document.getElementById("toggleButton");
+        if (iframe.style.display === "none") {
+            iframe.style.display = "block";
+            button.textContent = "Hide iFrame";
+        } else {
+            iframe.style.display = "none";
+            button.textContent = "Show iFrame";
+        }
+    }
+    
     let particles = [];
 
     function setup() {
