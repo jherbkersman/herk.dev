@@ -156,7 +156,7 @@
       <li>SaaS Solutions</li>
     </ul>
     <div id="collapsibleIframe" style="position: fixed; right: 20px; bottom: 20px;">
-        <div id="toggleButton" onclick="toggleIframe()" style="width: 25px; height: 25px; border-radius: 50%; background-color: #8bbefb; color: #FFF; text-align: center; line-height: 25px; position: absolute; top: -12.5px; left: -12.5px; cursor: pointer;">-</div>
+        <div id="toggleButton" onclick="toggleIframe()" style="width: 25px; height: 25px; border-radius: 50%; background-color: #8bbefb; color: #FFF; position: absolute; top: -12.5px; left: -12.5px; cursor: pointer; font-family: Arial, sans-serif; font-size: 12px; line-height: 26px; text-align: center;">X</div>
         <iframe
             id="myIframe"
             src="https://jackherb-ajw-gpt.hf.space"
@@ -178,8 +178,8 @@
         var button = document.getElementById("toggleButton");
         if (iframe.style.display === "none") {
             iframe.style.display = "block";
-            button.textContent = "-";
-            button.style="width: 25px; height: 25px; border-radius: 50%; background-color: #8bbefb; color: #FFF; text-align: center; line-height: 25px; position: absolute; top: -12.5px; left: -12.5px; cursor: pointer;"
+            button.textContent = "X";
+            button.style="width: 25px; height: 25px; border-radius: 50%; background-color: #8bbefb; color: #FFF; position: absolute; top: -12.5px; left: -12.5px; cursor: pointer; font-family: Arial, sans-serif; font-size: 12px; line-height: 26px; text-align: center;"
         } else {
             iframe.style.display = "none";
             button.textContent = "🤖";
