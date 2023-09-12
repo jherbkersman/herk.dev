@@ -141,6 +141,12 @@
           font-size: 12px;  /* Reduce footer text size */
         }
       }
+      /* Dark Mode */
+      @media (prefers-color-scheme: dark) {
+          .chatbot {
+              background-color: black;
+          }
+      }
     </style>
   </head>
   <body>
@@ -155,7 +161,7 @@
       <li>Web Development</li>
       <li>SaaS Solutions</li>
     </ul>
-    <div id="collapsibleIframe" style="position: fixed; right: 20px; bottom: 20px; background-color: white; border-radius: 15px;">
+    <div id="collapsibleIframe" class="chatbot" style="position: fixed; right: 20px; bottom: 20px; background-color: white; border-radius: 15px;">
         <div id="toggleButton" onclick="toggleIframe()" style="width: 25px; height: 25px; border-radius: 50%; background-color: #8bbefb; color: #FFF; position: absolute; top: -12.5px; left: -12.5px; cursor: pointer; font-family: Arial, sans-serif; font-size: 12px; line-height: 26px; text-align: center;">X</div>
         <iframe
             id="myIframe"
