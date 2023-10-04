@@ -68,16 +68,22 @@
         color: rgb(206, 145, 120);
       }
       ul {
-        list-style: none;
-        padding: 0;
+          list-style: none;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
       }
       li {
-        margin: 10px 0;
+        margin: 5px 0;
       }
       h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         text-decoration: underline;
         margin-bottom: 0;
+        transition: color 0.5s ease; /* This line makes the color transition smooth */
       }
+
       h1:hover {
         color: black;
       }
@@ -101,9 +107,10 @@
         box-shadow: 3px 3px 10px black;
         border-radius: 5px;
         font-size: 14px;
+        transition: all 0.2s ease; /* This line makes the color transition smooth */
       }
       button:hover {
-        background-color: darksalmon;
+        background-color: rgb(206, 111, 79);
       }
 
       .content {
@@ -161,7 +168,7 @@
     <div class="logo">
       <span class="h">h</span><span class="t">t</span><span class="dot">.</span>
     </div>
-    <h1>herk.dev</h1>
+    <h1>Herk Technical</h1>
     <ul>
       <li>Machine Learning/A.I.</li>
       <li>Big Data Analytics</li>
@@ -199,6 +206,15 @@
             button.style="width: 50px; height: 50px; border-radius: 50%; background-color: #91adcf; color: #FFF; font-weight: bold; text-align: center; line-height: 50px; position: absolute; bottom: 0px; right: 0px; cursor: pointer;"
         }
     }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        // Check if the device is not mobile
+        //if (window.innerWidth < 600) {
+        //    toggleIframe();  // Hide the iframe for mobile devices
+        //}
+
+        toggleIframe();  // Hide the iframe initally
+    });
     
     let particles = [];
 
