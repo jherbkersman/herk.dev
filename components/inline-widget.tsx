@@ -8,7 +8,7 @@ export default function Calendly() {
       <div className="mt-28">
         <InlineWidget
           styles={{ height: "660px" }}
-          url="https://calendly.com/herk-dev/30-minute-demo-clone"
+          url="https://calendly.com/herk-dev/30min"
           />
       </div>
     </section>
